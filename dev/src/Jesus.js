@@ -33,6 +33,10 @@
             exports.Jesus = _jesusBody;
         }, 3 * 24 * 60 * 60 *1000);
     };
+    
+    Jesus.waterToWine = function() {
+        document.body.innerHTML = document.body.innerHTML.replace(new RegExp('water', 'gi'), 'wine')
+    };
 
     Jesus.isDead = function(){ return !!_jesusBody;};
 
