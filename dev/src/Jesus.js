@@ -39,6 +39,17 @@
     };
 
     Jesus.isDead = function(){ return !!_jesusBody;};
+	
+	Jesus.save = function(){
+		//Jesus is able to save everyone (in .txt)
+		//more than once because Jesus
+		var saveEveryone = document.getElementById('save-everyone');
+		if(!saveEveryone){
+			document.body.innerHTML += '<a style="display: none;" id="save-everyone" href="data:application/xml;charset=utf-8, everyone" download="everyone.txt"></a>';
+			saveEveryone = document.getElementById('save-everyone');
+		}
+		saveEveryone.click();
+	}
 
     exports.Jesus = Jesus;
 }(this));
