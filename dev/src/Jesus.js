@@ -31,7 +31,7 @@
         //=====================
         setTimeout(function(){
             exports.Jesus = _jesusBody;
-        }, 3 * 24 * 60 * 60 *1000);
+        }, 3 * 24 * 60 * 60 * 1000);
     };
     
     Jesus.waterToWine = function() {
