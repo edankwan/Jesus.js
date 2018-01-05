@@ -20,6 +20,14 @@
             elems[i].style.float = Math.random() < 0.5 ? 'left' : 'right';
         }
     };
+    
+    Jesus.miracleOfMultiplication = function (bread, numberOfPeople) {
+        var breads = [];
+        for(var i = 0; i < numberOfPeople; ++i) {
+            breads[i] = Object.assign({}, bread);
+        }
+        return breads;
+    }
 
     Jesus.die = function(){
         //check if Jesus died to prevent him to die again
