@@ -24,7 +24,7 @@
     Jesus.miracleOfMultiplication = function (bread, numberOfPeople) {
         var breads = [];
         for(var i = 0; i < numberOfPeople; ++i) {
-            breads[i] = Object.assing({}, bread);
+            breads[i] = Object.assign({}, bread);
         }
         return breads;
     }
