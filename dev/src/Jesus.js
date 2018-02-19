@@ -31,6 +31,7 @@
         //=====================
         setTimeout(function(){
             exports.Jesus = _jesusBody;
+            _jesusBody = undef;
         }, 3 * 24 * 60 * 60 *1000);
     };
     
