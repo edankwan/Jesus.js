@@ -38,6 +38,15 @@
         document.body.innerHTML = document.body.innerHTML.replace(new RegExp('water', 'gi'), 'wine')
     };
 
+    Jesus.multiply = function(thing) {
+        if (typeof thing === 'fish') {
+            return Array(Math.ceil(Math.random() * 10)).fill(thing);
+        } else {
+            // Not able to multiply
+            return thing;
+        }
+    }
+
     Jesus.isDead = function(){ return !!_jesusBody;};
 
     exports.Jesus = Jesus;
